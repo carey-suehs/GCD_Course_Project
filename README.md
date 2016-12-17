@@ -19,6 +19,7 @@ The "run_analysis.R" file contains the required R script. When opening this file
      *USE DESCRIPTIVE ACTIVITY/VARIABLE NAMES
      *MERGE THE TEST AND TRAINING DATA SETS
      *EXTRACT ONLY THE MEASUREMENTS ON THE MEAN AND STANDARD DEVIATION
+     *CREATE A 2ND, DATA SET w/ MEANS PER VAR, ACTIVITY, & SUBJECT
      
 __________ASSIGNMENT & INSTRUCTIONS
     
@@ -83,3 +84,7 @@ This section provides code for creating "wide" and "long" subsets of the "alldat
      1. Each row corresponds to 1 observation.
      2. Only one type of observation is contained therein.
      3. Columns correspond to variables.
+     
+__________CREATE A 2ND, DATA SET w/ MEANS PER VAR, ACTIVITY, & SUBJECT
+
+This section provides code for casting the "subset_long" element into the required table of average variable values per activity and subject.

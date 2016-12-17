@@ -48,4 +48,27 @@ This section provides code for reading the "train" subset tables into the R envi
 
 __________USE DESCRIPTIVE ACTIVITY/VARIABLE NAMES
 
-Because I am frequently interrupted when coding, I prefer to change to descriptive labels or variables names right from the start of a project. This section provides code that changes non-informative integers corresponding to an activity to a vector of "strings" that clearly indicates the activity. Similarly, the "V1, V2, V3..." variables are renamed with informative names. As listed in the readme files that accompany the assignment dataset, these labels can be interpreted as follows:
+Because I am frequently interrupted when coding, I prefer to change to descriptive labels or variables names right from the start of a project (the assignment instructions suggested that this could be done towards the end of the assignment). 
+
+This section provides code that changes non-informative integers corresponding to an activity to a vector of "strings" that clearly indicates the activity (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING). 
+
+Similarly, the "V1, V2, V3..." variables are renamed with informative names provided in the features list that came with the dataset. As listed in the readme files that accompany the assignment dataset, these labels can be interpreted according to the following:
+
+     t: a time domain signal
+     f: a frequency domain signal (application of a Fast Fourrier Transform)
+     Acc: a measure provided by the accelerometer; these occur in three dimensions: X, Y & Z.
+     Gyro: a measure provided by the gyroscope; these occur in three dimensions: X, Y & Z.
+     X: first dimension
+     Y: second dimension
+     Z: third dimension
+     Body: a first sub-component of the Acc signal
+     Gravity: a second sub-component of the Acc signal
+     Jerk: a jerk signal derived in time from body linear acceleration (accelerometer) and angular velocity (gyroscope)
+     Mag: the magnitude of three-dimensional signals using the Euclidian norm
+     mean(): Mean value
+     std(): Standard deviation
+     
+For example, the variable "tBodyAcc-mean()-X" corresponds to the mean value of the "body" sub-component in the time domain of the first dimension (X) of acceleration measures provided by the accelerometer.
+     
+     
+     

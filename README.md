@@ -15,11 +15,11 @@ The "xxx" file contains the required R script. When opening this file, one can e
      *xxxx
      *xxxxx
      
-    __________ASSIGNMENT & INSTRUCTIONS
+__________ASSIGNMENT & INSTRUCTIONS
     
 This section simply restates the course assignment and any related instructions for clarity of purpose.
 
-    __________Working directory and library calls
+__________Working directory and library calls
     
 This section is where the working directory is set.  Other users will need to change this section to fit the working directory
 for thier local system.

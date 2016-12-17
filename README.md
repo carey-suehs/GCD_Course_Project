@@ -8,7 +8,7 @@ This project contain the following files:
      
 __________________________The required R script. 
 
-The "xxx" file contains the required R script. When opening this file, one can easily see that it is divided into several sections:
+The "run_analysis.R" file contains the required R script. When opening this file, one can easily see that it is divided into several sections:
 
      *ASSIGNMENT & INSTRUCTIONS
      *WORKING DIRECTORY AND LIBRARY CALLS

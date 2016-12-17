@@ -14,6 +14,7 @@ The "run_analysis.R" file contains the required R script. When opening this file
      *WORKING DIRECTORY AND LIBRARY CALLS
      *DOWNLOAD THE DATA SET TO A LOCAL DIRECTORY
      *ROOT LEVEL FILES IN THE DATA SET
+     *xxx
      
 __________ASSIGNMENT & INSTRUCTIONS
     
@@ -32,3 +33,7 @@ This section provides code that downloads the required data set to a local direc
 NB: This download can take a few minutes.
 
 __________ROOT LEVEL FILES IN THE DATA SET
+
+This section provides code for reading root-level tables into the R environment. Comments are provided for each element at the root level of the data set.
+
+__________xxx

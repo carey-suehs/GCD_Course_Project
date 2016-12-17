@@ -16,7 +16,7 @@ The "run_analysis.R" file contains the required R script. When opening this file
      *ROOT LEVEL FILES IN THE DATA SET
      *FILES IN THE "TEST" DIRECTORY
      *FILES IN THE "TRAIN" DIRECTORY
-     *USE DESCRIPTIVE ACTIVITY NAMES
+     *USE DESCRIPTIVE ACTIVITY/VARIABLE NAMES
      
 __________ASSIGNMENT & INSTRUCTIONS
     
@@ -46,6 +46,6 @@ __________FILES IN THE "TRAIN" DIRECTORY
 
 This section provides code for reading the "ttrain" subset tables into the R environment. Comments are provided for each element in the "train" directory. Other users will need to change directory calls to fit their needs.
 
-__________USE DESCRIPTIVE ACTIVITY NAMES
+__________USE DESCRIPTIVE ACTIVITY/VARIABLE NAMES
 
-Because I am frequently interrupted when coding, I prefer to change to descriptive labels or variables names right from the start of a project. This section provides code that changes non-informative integers corresponding to an activity to a vector of "strings" that clearly indicate the activity.
+Because I am frequently interrupted when coding, I prefer to change to descriptive labels or variables names right from the start of a project. This section provides code that changes non-informative integers corresponding to an activity to a vector of "strings" that clearly indicates the activity. Similarly, the "V1, V2, V3..." variables are renamed with informative names. As listed in the readme files that accompany the assignment dataset, these labels can be interpreted as follows:

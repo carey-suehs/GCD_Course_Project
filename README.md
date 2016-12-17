@@ -17,6 +17,8 @@ The "run_analysis.R" file contains the required R script. When opening this file
      *FILES IN THE "TEST" DIRECTORY
      *FILES IN THE "TRAIN" DIRECTORY
      *USE DESCRIPTIVE ACTIVITY/VARIABLE NAMES
+     *MERGE THE TEST AND TRAINING DATA SETS
+     *EXTRACT ONLY THE MEASUREMENTS ON THE MEAN AND STANDARD DEVIATION
      
 __________ASSIGNMENT & INSTRUCTIONS
     
@@ -69,6 +71,15 @@ Similarly, the "V1, V2, V3..." variables are renamed with informative names prov
      std(): Standard deviation
      
 For example, the variable "tBodyAcc-mean()-X" corresponds to the mean value of the "body" sub-component in the time domain of the first dimension (X) of acceleration measures provided by the accelerometer.
-     
-     
-     
+
+__________MERGE THE TEST AND TRAINING DATA SETS
+
+This section provides code for creating an "all data" table that combines the test and training data sets.
+
+__________EXTRACT ONLY THE MEASUREMENTS ON THE MEAN AND STANDARD DEVIATION
+
+This section provides code for creating "wide" and "long" subsets of the "alldata" table. The resulting dataframes "subset_wide" and "subset_long" can be considere as TIDY because:
+
+     1. Each row corresponds to 1 observation.
+     2. Only one type of observation is contained therein.
+     3. Columns correspond to variables.

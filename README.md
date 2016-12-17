@@ -44,7 +44,7 @@ This section provides code for reading the "test" subset tables into the R envir
 
 __________FILES IN THE "TRAIN" DIRECTORY
 
-This section provides code for reading the "ttrain" subset tables into the R environment. Comments are provided for each element in the "train" directory. Other users will need to change directory calls to fit their needs.
+This section provides code for reading the "train" subset tables into the R environment. Comments are provided for each element in the "train" directory. Other users will need to change directory calls to fit their needs.
 
 __________USE DESCRIPTIVE ACTIVITY/VARIABLE NAMES
 

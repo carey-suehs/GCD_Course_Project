@@ -79,7 +79,7 @@ This section provides code for creating an "all data" table that combines the te
 
 __________EXTRACT ONLY THE MEASUREMENTS ON THE MEAN AND STANDARD DEVIATION
 
-This section provides code for creating "wide" and "long" subsets of the "alldata" table. The resulting dataframes "subset_wide" and "subset_long" can be considere as TIDY because:
+This section provides code for creating "wide" and "long" subsets of the "alldata" table. The resulting dataframes "subset_wide" and "subset_long" can be considered as TIDY because:
 
      1. Each row corresponds to 1 observation.
      2. Only one type of observation is contained therein.

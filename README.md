@@ -85,6 +85,10 @@ This section provides code for creating "wide" and "long" subsets of the "alldat
      2. Only one type of observation is contained therein.
      3. Columns correspond to variables.
      
+The resulting tidy datasets are exported to the working directory.
+     
 __________CREATE A 2ND, DATA SET w/ MEANS PER VAR, ACTIVITY, & SUBJECT
 
 This section provides code for casting the "subset_long" element into the required table of average variable values per activity and subject.
+
+The resulting tidy dataset is exported to the working directory

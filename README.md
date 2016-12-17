@@ -15,6 +15,7 @@ The "run_analysis.R" file contains the required R script. When opening this file
      *DOWNLOAD THE DATA SET TO A LOCAL DIRECTORY
      *ROOT LEVEL FILES IN THE DATA SET
      *FILES IN THE "TEST" DIRECTORY
+     *FILES IN THE "TRAIN" DIRECTORY
      
 __________ASSIGNMENT & INSTRUCTIONS
     
@@ -40,6 +41,8 @@ __________FILES IN THE "TEST" DIRECTORY
 
 This section provides code for reading the "test" subset tables into the R environment. Comments are provided for each element in the "test" directory. Other users will need to change directory calls to fit their needs.
 
+__________FILES IN THE "TRAIN" DIRECTORY
 
+This section provides code for reading the "ttrain" subset tables into the R environment. Comments are provided for each element in the "train" directory. Other users will need to change directory calls to fit their needs.
 
 

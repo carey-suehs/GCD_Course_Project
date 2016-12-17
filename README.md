@@ -6,7 +6,7 @@ This project contain the following files:
      2. The required code book.
      3. The present readme file.
      
-__________________________The required R script. 
+__________________________The required R script._____________________________________________________________ 
 
 The "run_analysis.R" file contains the required R script. When opening this file, one can easily see that it is divided into several sections:
 

@@ -11,7 +11,7 @@ __________________________The required R script.
 The "xxx" file contains the required R script. When opening this file, one can easily see that it is divided into several sections:
 
      *ASSIGNMENT & INSTRUCTIONS
-     *Working directory and library calls
+     *WORKING DIRECTORY AND LIBRARY CALLS
      *xxxx
      *xxxxx
      
@@ -19,7 +19,7 @@ __________ASSIGNMENT & INSTRUCTIONS
     
 This section simply restates the course assignment and any related instructions for clarity of purpose.
 
-__________Working directory and library calls
+__________WORKING DIRECTORY AND LIBRARY CALLS
     
 This section is where the working directory is set.  Other users will need to change this section to fit the working directory
 for thier local system.

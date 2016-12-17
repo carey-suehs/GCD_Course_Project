@@ -17,15 +17,14 @@ The "xxx" file contains the required R script. When opening this file, one can e
      
 __________ASSIGNMENT & INSTRUCTIONS
     
-This section simply restates the course assignment and any related instructions for clarity of purpose.
+     This section simply restates the course assignment and any related instructions for clarity of purpose.
 
 __________WORKING DIRECTORY AND LIBRARY CALLS
     
-This section is where the working directory is set.  Other users will need to change this section to fit the working directory
-for thier local system.
+     This section is where the working directory is set.  Other users will need to change this section to fit the working directory for their local system.
 
-All package installation and library calls are also placed here.  Package installations are indicated as comments (preceded by "#") because the packages are already installed on my local system.  Other users may remove the "#"s as required.
+     All package installation and library calls are also placed here.  Package installations are indicated as comments (preceded by "#") because the packages are already installed on my local system.  Other users may remove the "#"s as required.
 
 __________DOWNLOAD THE DATA SET TO A LOCAL DIRECTORY
 
-This section provides code that download the required data set to a local directory.  Other users will need to change that local directory to fit their needs.
+     This section provides code that download the required data set to a local directory.  Other users will need to change that local directory to fit their needs.

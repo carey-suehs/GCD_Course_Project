@@ -60,8 +60,8 @@ variable:  A factor variable corresponding to measurement codes. As listed in th
      Gravity: a second sub-component of the Acc signal
      Jerk: a jerk signal derived in time from body linear acceleration (accelerometer) and angular velocity (gyroscope)
      Mag: the magnitude of three-dimensional signals using the Euclidian norm
-     mean...: Mean value
-     std...: Standard deviation
+     mean(): Mean value
+     std(): Standard deviation
      
     For example, the variable "tBodyAcc-mean()-X" corresponds to the mean value of the "body" sub-component in the time domain of the first dimension (X) of acceleration measures provided by the accelerometer.
     

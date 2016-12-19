@@ -86,11 +86,10 @@ range(subject_train)
 data_cols <- rbind(X_test, X_train)
 activity <- rbind(y_test, y_train)
 subject <- rbind(subject_test, subject_train)
-subset <- c(rep("test", dim(y_test)[1]), rep("train", dim(y_train)[1]))
 
-alldata <- cbind(subset, subject, activity, data_cols)
-colnames(alldata)[2] <- "subject"
-colnames(alldata)[3] <- "activity_num"
+alldata <- cbind(subject, activity, data_cols)
+colnames(alldata)[1] <- "subject"
+colnames(alldata)[2] <- "activity_num"
 
 #_______2.EXTRACT ONLY THE MEASUREMENTS ON THE MEAN AND STANDARD DEVIATION______
 
@@ -126,10 +125,10 @@ mean_std_index <- grep("mean\\(\\)|std\\(\\)", features$V2)
 subset_wide <- cbind(alldata[, 1:3], alldata[, mean_std_index+3])
 
 # We can subsequently make a long version of the subset like this:
-subset_long <- melt (subset_wide,  id=c("subset","subject", "activity_num"))
+subset_long <- melt (subset_wide,  id=c("subject", "activity_num"))
 
 
-#________3 USE DESCRIPTIVE ACTIVITY NAMES____________________________________
+#________3. USE DESCRIPTIVE ACTIVITY NAMES____________________________________
 
 #use activity_num and the activities table to create a vector of activity labels
 #for the subset_long
@@ -139,7 +138,7 @@ activity_nums <- data.frame(subset_long$activity_num)
 colnames(activity_nums)[1] <- "activity_num"
 activity <- join(activity_nums, activities, by = "activity_num", type="left")
 
-#________4 USE DESCRIPTIVE VARIABLE NAMES______________________________________
+#________4. USE DESCRIPTIVE VARIABLE NAMES______________________________________
 
 #create a correspondance table between "v1" "v2" etc and feature names
 
@@ -156,13 +155,13 @@ variables <- join(variable_nums, feature_table, by = "variable_num", type="left"
 
 #create new long subset with activity and variable labels
 
-subset_long_labeled <- data.frame(subset_long$subset, subset_long$subject, 
+subset_long_labeled <- data.frame(subset_long$subject, 
                         activity$activity, variables$variable, 
                         subset_long$value)
-colnames(subset_long_labeled) <- c("subset", "subject", "activity", "variable", 
+colnames(subset_long_labeled) <- c("subject", "activity", "variable", 
                                    "value")
 
-write.csv(subset_long_labeled, "subset_long_labeled.csv")
+write.csv(subset_long_labeled, "subset_long_labeled.csv", row.names = FALSE)
 #The subset_long_labeled dataset is TIDY because it concerns one type of
 #observation, each row corresponds to an observation, and each column 
 #corresponds to a variable.
@@ -173,4 +172,7 @@ write.csv(subset_long_labeled, "subset_long_labeled.csv")
 #averages per subject and activity for each variable:
 subset_cast <- dcast(subset_long_labeled,  subject + activity ~ variable , mean)
 
-write.csv(subset_cast, "subset_cast.csv")
+cast_long <- melt (subset_cast,  id=c("subject", "activity"))
+colnames(cast_long)[4] <- "average"
+
+write.csv(cast_long, "averages_persubject_peractivity.csv", row.names = FALSE)

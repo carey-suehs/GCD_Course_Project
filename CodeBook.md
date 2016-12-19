@@ -82,10 +82,10 @@ These signals were used to estimate variables of the feature vector for each pat
 
 _________________value
 
-value: (specific to position 4 on "subset_long_labeled.csv") The corresponding numerical value measured for the associated variable.
+value: (specific to position 4 on "subset_long_labeled.txt") The corresponding numerical value measured for the associated variable.
 
 
 
 _________________average
 
-average: (specific to position 4 on "averages_persubject_peractivity.csv") An avereage of the numerical values measured for the associated subject-activity combination.
+average: (specific to position 4 on "averages_persubject_peractivity.txt") An avereage of the numerical values measured for the associated subject-activity combination.

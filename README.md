@@ -39,7 +39,7 @@ The "run_analysis.R" file contains the required R script. When opening this file
      *FILES IN THE "TEST" DIRECTORY
      *FILES IN THE "TRAIN" DIRECTORY
      *1. MERGE THE TEST AND TRAINING DATA SETS
-     *2.EXTRACT ONLY THE MEASUREMENTS ON THE MEAN AND STANDARD DEVIATION
+     *2. EXTRACT ONLY THE MEASUREMENTS ON THE MEAN AND STANDARD DEVIATION
      *3. USE DESCRIPTIVE ACTIVITY NAMES
      *4. USE DESCRIPTIVE VARIABLE NAMES
      *5. CREATE A 2ND, DATA SET w/ MEANS PER VAR, ACTIVITY, & SUBJECT
@@ -70,13 +70,19 @@ This section provides code for reading the "train" subset tables into the R envi
 
 __________1. MERGE THE TEST AND TRAINING DATA SETS
 
-This section provides code for creating an "all data" table that combines the test and training data sets.
+This section provides code for binding the provided data together into one large table called "alldata".
 
+__________2. EXTRACT ONLY THE MEASUREMENTS ON THE MEAN AND STANDARD DEVIATION
 
+This section provides code for extracting the required subset and subsequently melting it into a long version
 
+__________3. USE DESCRIPTIVE ACTIVITY NAMES
 
+Tables provided for activity names are joined to create a vector of character strings instead of numbers.
 
-__________USE DESCRIPTIVE ACTIVITY/VARIABLE NAMES
+__________4. USE DESCRIPTIVE VARIABLE NAMES
+
+Tables provided for variable names are joined to create a vector of character strings instead of "V1", "V2", "V3", etc.
 
 Because I am frequently interrupted when coding, I prefer to change to descriptive labels or variables names right from the start of a project (the assignment instructions suggested that this could be done towards the end of the assignment). 
 

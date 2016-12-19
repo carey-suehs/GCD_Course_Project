@@ -9,13 +9,19 @@ Both of these datasets have similar long structures, as demonstrated in the foll
 
 Here is the column structure for "subset_long_labeled.csv":  
 
-position:   1           2              3           4             
-label:      "subject"   "activity"    "variable"    "value" 
+      position - label
+      1 - "subject"
+      2 - "activity"
+      3 - "variable"
+      4 - "value"
 
 Here is the column structure for "averages_persubject_peractivity.csv":  
 
-position:   1           2              3           4             
-label:      "subject"   "activity"    "variable"    "average" 
+      position - label
+      1 - "subject"
+      2 - "activity"
+      3 - "variable"
+      4 - "average"
 
 
 

@@ -122,7 +122,7 @@ colnames(alldata)[2] <- "activity_num"
 mean_std_index <- grep("mean\\(\\)|std\\(\\)", features$V2)
 
 # We can then get the desired subset like this:
-subset_wide <- cbind(alldata[, 1:3], alldata[, mean_std_index+3])
+subset_wide <- cbind(alldata[, 1:3], alldata[, mean_std_index+2])
 
 # We can subsequently make a long version of the subset like this:
 subset_long <- melt (subset_wide,  id=c("subject", "activity_num"))

@@ -161,7 +161,7 @@ subset_long_labeled <- data.frame(subset_long$subject,
 colnames(subset_long_labeled) <- c("subject", "activity", "variable", 
                                    "value")
 
-write.csv(subset_long_labeled, "subset_long_labeled.csv", row.names = FALSE)
+write.table(subset_long_labeled, "subset_long_labeled.txt", row.names = FALSE)
 #The subset_long_labeled dataset is TIDY because it concerns one type of
 #observation, each row corresponds to an observation, and each column 
 #corresponds to a variable.
@@ -175,4 +175,4 @@ subset_cast <- dcast(subset_long_labeled,  subject + activity ~ variable , mean)
 cast_long <- melt (subset_cast,  id=c("subject", "activity"))
 colnames(cast_long)[4] <- "average"
 
-write.csv(cast_long, "averages_persubject_peractivity.csv", row.names = FALSE)
+write.table(cast_long, "averages_persubject_peractivity.txt", row.names = FALSE)

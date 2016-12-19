@@ -98,6 +98,6 @@ The resulting tidy dataset is exported to the working directory.
      
 __________5. CREATE A 2ND, DATA SET w/ MEANS PER VAR, ACTIVITY, & SUBJECT
 
-This section provides code for casting the "subset_long" element into the required table of average variable values per activity and subject.
+This section provides code for casting the "subset_long" element into the required table of average variable values per activity and subject. Some reshaping is performed (I like long datasets). Some renaming is performed to differentiate value types from previous tables.
 
-The resulting tidy dataset is exported to the working directory
+The resulting tidy dataset is exported to the working directory.

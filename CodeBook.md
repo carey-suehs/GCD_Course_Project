@@ -20,11 +20,13 @@ label:      "subject"   "activity"    "variable"    "average"
 
 
 _________________subject
+
 subject: An integer (factor variable) corresponding to 1 of 30 test subjects (human beings) who participated in the study. 
 
 
 
 _________________activity
+
 activity: A factor variable indicating which activity the subject was performing when measurements were being taken. These are: 
 
     WALKING, 
@@ -37,6 +39,7 @@ activity: A factor variable indicating which activity the subject was performing
 
 
 _________________variable
+
 variable:  A factor variable corresponding to measurement codes. As listed in the readme files that accompany the assignment dataset, these labels can be interpreted according to the following:
 
      t: a time domain signal
@@ -58,9 +61,11 @@ variable:  A factor variable corresponding to measurement codes. As listed in th
 
 
 _________________value
+
 value: (specific to position 4 on "subset_long_labeled.csv") The corresponding numerical value measured for the associated variable.
 
 
 
 _________________average
+
 average: (specific to position 4 on "averages_persubject_peractivity.csv") An avereage of the numerical values measured for the associated subject-activity combination.

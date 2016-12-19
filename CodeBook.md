@@ -1,14 +1,14 @@
-DATA DICTIONARY for the "subset_long_labeled.csv" and "averages_persubject_peractivity.csv" datasets
+DATA DICTIONARY for the "subset_long_labeled.txt" and "averages_persubject_peractivity.txt" datasets
 ____________________________________________________________________________________________________
 
-This data dictionary describes the variables contained in the two csv files associated with this github project:
+This data dictionary describes the variables contained in the two txt files associated with this github project:
 
-      "subset_long_labeled.csv"
-      "averages_persubject_peractivity.csv"
+      "subset_long_labeled.txt"
+      "averages_persubject_peractivity.txt"
       
 Both of these datasets have similar long structures, as demonstrated in the following column structure descriptions. Note that only the 4th column differs between the two datasets.
 
-Here is the column structure for "subset_long_labeled.csv":  
+Here is the column structure for "subset_long_labeled.txt":  
 
       position - label
       1 - "subject"
@@ -16,7 +16,7 @@ Here is the column structure for "subset_long_labeled.csv":
       3 - "variable"
       4 - "value"
 
-Here is the column structure for "averages_persubject_peractivity.csv":  
+Here is the column structure for "averages_persubject_peractivity.txt":  
 
       position - label
       1 - "subject"

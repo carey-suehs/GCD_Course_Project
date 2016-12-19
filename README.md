@@ -74,51 +74,29 @@ This section provides code for binding the provided data together into one large
 
 __________2. EXTRACT ONLY THE MEASUREMENTS ON THE MEAN AND STANDARD DEVIATION
 
-This section provides code for extracting the required subset and subsequently melting it into a long version
+This section provides code for extracting the required subset and subsequently melting it into a long version.
 
 __________3. USE DESCRIPTIVE ACTIVITY NAMES
+
+This section provides code that changes non-informative integers corresponding to an activity to a vector of "strings" that clearly indicates the activity (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING). 
 
 Tables provided for activity names are joined to create a vector of character strings instead of numbers.
 
 __________4. USE DESCRIPTIVE VARIABLE NAMES
 
+Similarly, the "V1, V2, V3..." variables are renamed with informative names provided in the features list that came with the dataset.
+
 Tables provided for variable names are joined to create a vector of character strings instead of "V1", "V2", "V3", etc.
 
-Because I am frequently interrupted when coding, I prefer to change to descriptive labels or variables names right from the start of a project (the assignment instructions suggested that this could be done towards the end of the assignment). 
-
-This section provides code that changes non-informative integers corresponding to an activity to a vector of "strings" that clearly indicates the activity (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING). 
-
-Similarly, the "V1, V2, V3..." variables are renamed with informative names provided in the features list that came with the dataset. As listed in the readme files that accompany the assignment dataset, these labels can be interpreted according to the following:
-
-     t: a time domain signal
-     f: a frequency domain signal (application of a Fast Fourrier Transform)
-     Acc: a measure provided by the accelerometer; these occur in three dimensions: X, Y & Z.
-     Gyro: a measure provided by the gyroscope; these occur in three dimensions: X, Y & Z.
-     X: first dimension
-     Y: second dimension
-     Z: third dimension
-     Body: a first sub-component of the Acc signal
-     Gravity: a second sub-component of the Acc signal
-     Jerk: a jerk signal derived in time from body linear acceleration (accelerometer) and angular velocity (gyroscope)
-     Mag: the magnitude of three-dimensional signals using the Euclidian norm
-     mean...: Mean value
-     std...: Standard deviation
-     
-For example, the variable "tBodyAcc-mean()-X" corresponds to the mean value of the "body" sub-component in the time domain of the first dimension (X) of acceleration measures provided by the accelerometer.
-
-
-
-__________EXTRACT ONLY THE MEASUREMENTS ON THE MEAN AND STANDARD DEVIATION
-
-This section provides code for creating "wide" and "long" subsets of the "alldata" table. The resulting dataframes "subset_wide" and "subset_long" can be considered as TIDY because:
+A new long data is created called "subset_long_labeled" and is considered as TIDY because:
 
      1. Each row corresponds to 1 observation.
      2. Only one type of observation is contained therein.
      3. Columns correspond to variables.
      
-The resulting tidy datasets are exported to the working directory.
+The resulting tidy dataset is exported to the working directory.
      
-__________CREATE A 2ND, DATA SET w/ MEANS PER VAR, ACTIVITY, & SUBJECT
+__________5. CREATE A 2ND, DATA SET w/ MEANS PER VAR, ACTIVITY, & SUBJECT
 
 This section provides code for casting the "subset_long" element into the required table of average variable values per activity and subject.
 

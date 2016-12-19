@@ -1,4 +1,5 @@
 DATA DICTIONARY for the "subset_long_labeled.csv" and "averages_persubject_peractivity.csv" datasets
+____________________________________________________________________________________________________
 
 This data dictionary describes the variables contained in the two csv files associated with this github project:
 

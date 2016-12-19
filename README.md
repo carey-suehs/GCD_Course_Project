@@ -68,6 +68,14 @@ __________FILES IN THE "TRAIN" DIRECTORY
 
 This section provides code for reading the "train" subset tables into the R environment. Comments are provided for each element in the "train" directory. Other users will need to change directory calls to fit their needs.
 
+__________1. MERGE THE TEST AND TRAINING DATA SETS
+
+This section provides code for creating an "all data" table that combines the test and training data sets.
+
+
+
+
+
 __________USE DESCRIPTIVE ACTIVITY/VARIABLE NAMES
 
 Because I am frequently interrupted when coding, I prefer to change to descriptive labels or variables names right from the start of a project (the assignment instructions suggested that this could be done towards the end of the assignment). 
@@ -92,9 +100,7 @@ Similarly, the "V1, V2, V3..." variables are renamed with informative names prov
      
 For example, the variable "tBodyAcc-mean()-X" corresponds to the mean value of the "body" sub-component in the time domain of the first dimension (X) of acceleration measures provided by the accelerometer.
 
-__________MERGE THE TEST AND TRAINING DATA SETS
 
-This section provides code for creating an "all data" table that combines the test and training data sets.
 
 __________EXTRACT ONLY THE MEASUREMENTS ON THE MEAN AND STANDARD DEVIATION
 
